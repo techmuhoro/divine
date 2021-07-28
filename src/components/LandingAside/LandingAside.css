@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+#landing .landing-aside {
+  background-color: #ff1111;
+  position: relative;
+}
+.landing-aside .aside-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.landing-aside .menu {
+  padding: 10px 0 0 20px;
+  height: 55px;
+  width: 55px;
+}
+.landing-aside .menu img {
+  width: 100%;
+  height: 100%;
+}
+.landing-aside .divine-head {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+/* .landing-aside .divine-head > div {
+  border: 1px solid cyan;
+} */
+.landing-aside .divine-head h1 {
+  font-size: 2.7rem;
+  font-family: 'Syne Mono', monospace;
+  letter-spacing: 1px;
+  /* border: 1px solid white; */
+}
+.landing-aside .divine-head h3 {
+  font-size: 1.3rem;
+  margin-top: -15px;
+  /* margin: 0 auto; */
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.landing-aside .quote {
+  /* border: 1px solid black; */
+  margin-top: 50px;
+  font-style: italic;
+}
+
+:where(.landing-aside .quote) .quote-left,
+.quote-right {
+  font-size: 2rem;
+  color: rgb(218, 172, 172);
+  opacity: 0.5;
+}
+.landing-aside .quote .quote-left {
+  margin-left: 50px;
+}
+.landing-aside .quote .quote-right {
+  margin-left: 170px;
+}
+.landing-aside .quote .quote-text {
+  color: white;
+  padding: 0 50px;
+  font-size: 0.85rem;
+}
+.landing-aside .season {
+  color: white;
+  width: 280px;
+  font-size: 0.8rem;
+  /* border: 1px solid magenta; */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  transform-origin: left;
+  transform: rotate(-90deg);
+}
+.landing-aside .season .bottom {
+  position: relative;
+}
+.landing-aside .season .bottom::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background-color: white;
+}
+.landing-aside .chevrons {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 55px;
+  /* border: 1px solid black; */
+}
+.landing-aside .chevrons div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-aside .chevrons div:nth-of-type(1) {
+  margin-bottom: 40px;
+}
+.landing-aside .aside-img {
+  width: 250px;
+  height: 140px;
+  position: absolute;
+  right: -30px;
+  /* right: -120px; */
+  /* border: 2px solid black; */
+  bottom: 30px;
+}
+.landing-aside .aside-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+.landing-aside div[class^='float'] {
+  width: 45%;
+  height: 10px;
+  position: absolute;
+  top: 140px;
+}
+.landing-aside .float-white {
+  background: white;
+  right: 0;
+}
+.landing-aside .float-red {
+  background: #ff1111;
+  right: -45%;
+}
+.landing-aside .float-red::after {
+  content: '';
+  background: #ff1111;
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  width: 7px;
+  height: 100%;
+}

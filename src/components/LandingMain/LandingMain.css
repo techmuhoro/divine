@@ -1,0 +1,166 @@
+.landing-main {
+  display: grid;
+  grid-template-columns: 93% 7%;
+  grid-template-rows: 100%;
+}
+.landing-main .main-center {
+  position: relative;
+}
+
+.landing-main .main-nav {
+  margin-top: 70px;
+  /* border: 2px solid red; */
+}
+.landing-main .main-nav ul {
+  margin-left: 140px;
+  list-style: none;
+  display: flex;
+  /* border: 1px solid fuchsia; */
+  width: 70%;
+  justify-content: space-between;
+}
+.landing-main .main-nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.landing-main .main-text {
+  /* border: 1px solid fuchsia; */
+  width: 350px;
+  margin: 100px 0 0 30px;
+}
+.landing-main .main-text div h1:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+.landing-main .main-text p {
+  opacity: 0.7;
+}
+.landing-main .main-image {
+  position: absolute;
+  top: 130px;
+  right: 0;
+}
+.landing-main .image {
+  width: 300px;
+  height: 340px;
+  position: relative;
+  /* border: 3px solid black; */
+}
+.landing-main .image p.arrow {
+  background: #ff1111;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.landing-main .image img {
+  width: 100%;
+  height: 100%;
+}
+.landing-main .image .overlay {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.253);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-main .overlay .overlay-wrapper {
+  width: 86%;
+  height: 97%;
+  /* border: 1px solid olive; */
+}
+.landing-main .overlay p {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.landing-main .overlay .line {
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  margin: -3px 0 20px -10px;
+}
+.landing-main .overlay .circle {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.541);
+  margin: 10px auto;
+  border-radius: 50%;
+}
+.landing-main .overlay .circle.large {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+}
+.landing-main .main-image .bottom-line {
+  background-color: #ff1111;
+  width: 70%;
+  height: 7px;
+  margin-top: 20px;
+  margin-left: auto;
+  position: relative;
+}
+.landing-main .main-image .bottom-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 6px;
+  height: 100%;
+  background-color: #ff1111;
+}
+.landing-main .main-side {
+  padding-top: 72px;
+  /* background-color: fuchsia; */
+}
+.landing-main .main-side-wrapper {
+  /* border: 2px solid olive; */
+  height: 100%;
+  width: 18px;
+  margin: auto;
+  font-size: 1.1rem;
+  position: relative;
+}
+/* :where(.landing-main .main-side),
+.icons-top,
+.icons-middle,
+.icons-bottom {
+  position: absolute;
+  left: 0;
+} */
+.landing-main .main-side .icons-top {
+  position: absolute;
+  top: 0;
+}
+.landing-main .main-side .icons-middle {
+  position: absolute;
+  top: 30%;
+}
+.landing-main .main-side .icons-middle p {
+  margin-bottom: 20px;
+}
+.landing-main .main-side .icons-bottom {
+  position: absolute;
+  bottom: 50px;
+  /* background-color: gold; */
+}
+.landing-main .main-side i {
+  transition: 0.2s ease-out;
+}
+.landing-main .main-side i:hover {
+  color: #ff1111;
+}
